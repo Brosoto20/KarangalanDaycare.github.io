@@ -1,0 +1,51 @@
+body {
+    background: url("/Media/A-Background/crush-time.gif") no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+#board {
+    width: 450px;
+    height: 450px;
+    background-color: lightblue;
+    border: 5px solid slategray;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#board img {
+    width: 50px;
+    height: 50px;
+}
+.arrows{
+    width: 100vw;
+    margin-right: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.arrows img{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    margin-top: -500px;
+    margin-left: 1000px;
+}
+.arrows img:last-child{
+    animation: forward 2s linear infinite;
+    margin-right: 20px;
+}
+@keyframes backward{
+    100%{
+        transform: translate(-10px);
+    }
+}
+@keyframes forward{
+    100%{
+        transform: translate(10px);
+    }
+}

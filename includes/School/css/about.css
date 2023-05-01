@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+.background-about{
+    min-height: 100vh;
+    background-image: url("/Media/A-Zimage/OTHER-IMAGES/MSWD/karangalan-images.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+body > .container{
+    background-color: rgba(0,0,0, 0.2);
+}
+header.about-header{
+    position: fixed;
+    background: linear-gradient(to top, #59bfff, #fff000);
+}
+.main{
+    color: #a30800;
+}
+.main-about{
+    padding-top: 80px;
+}
+ul{
+    list-style-type: decimal;
+}
+.info-child{
+    margin-top: 10px;
+    margin-left: 710px;
+    text-align: center;
+    min-height: 100px;
+    width: 700px;
+    margin: auto;
+    padding: 2em;
+    align-items: center;
+    border-radius: 10px;
+    color: #000;
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 1.3px;
+    background-color: #bfbfbf;
+    box-shadow: 10px -10px 11px -4px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px -10px 11px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px -10px 11px -4px rgba(0,0,0,0.75);
+}
+.info-child.last{
+    text-align: start;
+}
+.main{
+    margin-top: 40px;
+    margin-left: 50px;
+    text-align: center;
+}

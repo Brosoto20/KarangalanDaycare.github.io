@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/numbers.css">\
+    <title>Nine</title>
+</head>
+<body>
+    <div class="try">
+
+        <div class="mcon">
+            <div class="main">
+
+
+        <!---Text input-->
+        <div class="mbox">
+            <div class="sans"><span id="ans"></span></div>
+            <div class="b1">
+                <img src="/Media/0-9numbers/other-numbers/0-9dogs/9.png" class="p1">
+                <p>
+                    "How many dog is in the picture?"
+                </p>
+                <p>
+                    type your answer here:
+                </p>
+                <div class="box-col">
+                    
+                    <input type="textf" id="intext" class="intext11">
+                </div>
+                <div class="box-col">
+                    <button class="btn" onclick="Game()">CHECK ANSWER</button>
+                </div>
+
+                <script>
+                    function Game(){
+                        var user = document.getElementById("intext").value;
+
+                        if (user == 9){
+                            document.getElementById("ans").innerHTML = "CORRECT"
+                        }else{
+                            document.getElementById("ans").innerHTML = "Your Answer is Wrong Try Again"
+                        }
+                    }
+                </script>
+
+            </div>
+        </div>
+        </div>
+        
+    </div>
+    
+    <div class="arrows">
+        <a href="/Views/count-game.html"><img src="/Media/A-Zimage/OTHER-IMAGES/Icons/next-pink.png" id="next"></a>
+    </div>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    transition: all 400ms ease-in-out;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+#back-icon{
+    width: 100px;
+    font-size: 60px;
+    font-weight: bold;
+    color: #000;
+    position: absolute;
+    top: 0;
+    left: 0.3em;
+    cursor: pointer;
+}
+.container{
+    width: 100%;
+    height: 85vh;
+    margin-top: 4.8em;
+}
+.image-letter{
+    width: 100%;
+    text-align: center;
+}
+.image-letter img{
+    width: 250px;
+}
+.image-noun{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-noun img{
+    width: 150px;
+    height: 150px;
+}
+.image-noun img:hover{
+    scale: 1.2;
+}
+.image-noun p{
+    font-size: 80px;
+    color: rgb(0, 255, 174);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    margin-left: 0.5em;
+}
+.arrows{
+    width: 60vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.arrows img{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+.arrows img:first-child{
+    animation: backward 2s linear infinite;
+}
+.arrows img:last-child{
+    animation: forward 2s linear infinite;
+}
+@keyframes backward{
+    100%{
+        transform: translate(-10px);
+    }
+}
+@keyframes forward{
+    100%{
+        transform: translate(10px);
+    }
+}
